@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @layer components {
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 157px;
+      height: 56px;
+      font-size: 18px;
+      border-radius: 15px;
+      border: 1px solid #204293;
+    }
+    .btn:hover {
+      transition: all 0.5s;
+    }
+    .btn:active {
+      background: #f2f2f280;
+      border: 1px solid #204293;
+      box-shadow: 0px 4px 4px 0px #00000040 inset;
+      transition: all 0.2s;
+    }
+    .btn2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 157px;
+      height: 56px;
+      color: white;
+      font-size: 18px;
+      border-radius: 15px;
+      background-color: #204293;
+    }
+    .btn2:hover {
+      background-color: #072878;
+      transition: all 0.5s;
+    }
+    .btn2:active {
+      background: #204293b2;
+      box-shadow: 0px 4px 4px 0px #00000040 inset;
+      transition: all 0.2s;
+    }
+    .btn3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 56px;
+      color: white;
+      font-size: 18px;
+      border-radius: 15px;
+      background-color: #204293;
+    }
+    .btn3:hover {
+      background-color: #072878;
+      transition: all 0.5s;
+    }
+    .btn3:active {
+      background: #204293b2;
+      box-shadow: 0px 4px 4px 0px #00000040 inset;
+      transition: all 0.2s;
+    }
+    .container {
+      @apply max-w-7xl m-auto;
+    }
+    .card {
+      @apply p-3 rounded-md bg-white shadow-md h-full;
+    }
+    .thumb {
+      max-height: 120px;
+      max-width: 70%;
+      margin: 0 auto;
+    }
+    .active {
+      src: url(./Favo.svg);
+    }
+  }
+}
