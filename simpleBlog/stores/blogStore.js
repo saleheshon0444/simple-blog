@@ -36,22 +36,15 @@ export const useBlogStore = defineStore("blogStore", {
     getBlog() {
       this.Loading = true;
       const favorites = localStorage.getItem("myfavorites");
+      console.log(favorites);
       if (favorites) {
         this.idis = favorites.split(",");
       }
       this.Loading = false;
     },
-    setblog(id) {
-      const blog = this.blogs.find((b) => b.id === id);
-      blog.isFav = true;
-    },
-    deleteBlog(id) {
-      this.blogs.filter((b) => {
-        return b.id !== id;
-      });
-    },
     stringfyIdis() {
       let arr = this.idis;
+      console.log(arr);
       localStorage.setItem("myfavorites", arr);
     },
     toggleFav(id) {
